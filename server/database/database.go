@@ -21,7 +21,7 @@ func Connect() *sql.DB {
 	password := config.Database.Password
 	typ := config.Database.Type
 
-	db, err := sql.Open(typ, user+":"+password+"@tcp("+host+":"+port+")/go_react_native_dev")
+	db, err := sql.Open(typ, user+":"+password+"@tcp("+host+":"+port+")/streaming_app_dev")
 
 	if err != nil {
 		log.Fatal(err.Error())
