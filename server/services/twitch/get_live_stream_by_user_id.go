@@ -8,7 +8,7 @@ import (
 	"streaming_app/server/services/api"
 )
 
-func GetLiveStreamByUser(id string) (Stream, api.WebError) {
+func GetLiveStreamByUserId(id string) (Stream, api.WebError) {
 	var response TwitchStreamResponse
 	var stream Stream
 

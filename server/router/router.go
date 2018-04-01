@@ -13,8 +13,8 @@ func Create() *gin.Engine {
 
 	api := router.Group("/api/" + config.Api.Version)
 
-	api.GET("/users", controllers.GetUserByName)
-	api.GET("/streams/:id", controllers.GetLiveStreamByUser)
+	api.GET("/users", controllers.GetUsersByName)
+	api.GET("/users/:id/stream", controllers.GetLiveStreamByUserId)
 
 	return router
 }

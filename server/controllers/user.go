@@ -7,9 +7,9 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func GetUserByName(c *gin.Context) {
+func GetUsersByName(c *gin.Context) {
 	name := c.Query("name")
-	user, err := twitch.GetUserByLogin(name)
+	user, err := twitch.GetUsersByName(name)
 
 	if err.Error == nil {
 		c.JSON(http.StatusOK, gin.H{"result": user})
@@ -22,9 +22,9 @@ func GetUserByName(c *gin.Context) {
 	}
 }
 
-func GetLiveStreamByUser(c *gin.Context) {
+func GetLiveStreamByUserId(c *gin.Context) {
 	id := c.Param("id")
-	stream, err := twitch.GetLiveStreamByUser(id)
+	stream, err := twitch.GetLiveStreamByUserId(id)
 
 	if err.Error == nil {
 		c.JSON(http.StatusOK, gin.H{"result": stream})
