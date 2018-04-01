@@ -1,4 +1,4 @@
-package app
+package server
 
 import (
 	"streaming_app/server/router"

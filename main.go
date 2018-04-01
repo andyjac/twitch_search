@@ -1,7 +1,7 @@
 package main
 
-import app "streaming_app/server"
+import "streaming_app/server"
 
 func main() {
-	app.Run()
+	server.Run()
 }
