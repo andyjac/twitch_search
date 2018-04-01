@@ -13,6 +13,7 @@ type TwitchConfig struct {
 
 type ApiConfig struct {
 	Version string `json:"version"`
+	Port    string `json:"port"`
 }
 
 type Config struct {

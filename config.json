@@ -4,6 +4,7 @@
     "id": "4lykmvl8burtt72zajgz0nyusfrx00"
   },
   "api": {
-    "version": "v1"
+    "version": "v1",
+    "port": "3000"
   }
 }
