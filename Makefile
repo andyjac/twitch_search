@@ -6,15 +6,11 @@ GLIDE      := $(shell command -v glide 2> /dev/null)
 
 .PHONY: client
 .PHONY: server
-.PHONY: setup
 .PHONY: build
 .PHONY: install
 
 client:
 	cd client && npm start
-
-setup:
-	make install
 
 server:
 	make build
