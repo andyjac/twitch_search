@@ -6,16 +6,18 @@ import (
 	"github.com/spf13/viper"
 )
 
-type DatabaseConfig struct {
-	User     string `json:"user"`
-	Password string `json:"password"`
-	Host     string `json:"host"`
-	Port     string `json:"port"`
-	Type     string `json:"type"`
+type TwitchConfig struct {
+	Url string `json:"url"` // twitch api base url
+	Id  string `json:"id"`  // twitch app Client-ID
+}
+
+type ApiConfig struct {
+	Version string `json:"version"`
 }
 
 type Config struct {
-	Database DatabaseConfig `json:"database"`
+	Twitch TwitchConfig `json:"twitch"`
+	Api    ApiConfig    `json:"api"`
 }
 
 func Read() Config {

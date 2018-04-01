@@ -1,9 +1,9 @@
 {
-  "database": {
-    "user": "go_user",
-    "password": "password",
-    "host": "127.0.0.1",
-    "port": "3306",
-    "type": "mysql"
+  "twitch": {
+    "url": "https://api.twitch.tv/kraken",
+    "id": "4lykmvl8burtt72zajgz0nyusfrx00"
+  },
+  "api": {
+    "version": "v1"
   }
 }
