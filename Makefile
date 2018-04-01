@@ -4,23 +4,17 @@ APP_DIR     = $(GOPATH)/src/$(APP_NAME)
 SETUP_DIR   = $(APP_DIR)/setup
 GLIDE      := $(shell command -v glide 2> /dev/null)
 
+.PHONY: client
 .PHONY: server
 .PHONY: setup
-.PHONY: client
+.PHONY: build
+.PHONY: install
 
 client:
 	cd client && npm start
 
 setup:
 	make install
-	make migrate
-	make seed
-
-seed:
-	go run $(SETUP_DIR)/seed.go
-
-migrate:
-	go run $(SETUP_DIR)/migrate.go
 
 server:
 	make build
