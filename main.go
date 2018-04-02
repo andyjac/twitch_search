@@ -1,6 +1,6 @@
 package main
 
-import "streaming_app/server"
+import "twitch_search/server"
 
 func main() {
 	server.Run()

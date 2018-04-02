@@ -1,8 +1,8 @@
 package router
 
 import (
-	"streaming_app/server/config"
-	"streaming_app/server/controllers"
+	"twitch_search/server/config"
+	"twitch_search/server/controllers"
 
 	"github.com/gin-gonic/gin"
 )

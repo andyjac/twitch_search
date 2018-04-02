@@ -1,4 +1,4 @@
-package: streaming_app
+package: twitch_search
 import:
 - package: github.com/gin-gonic/gin
   version: ~1.2.0

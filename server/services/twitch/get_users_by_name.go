@@ -5,7 +5,7 @@ import (
 	"errors"
 	"log"
 	"net/http"
-	"streaming_app/server/services/api"
+	"twitch_search/server/services/api"
 )
 
 func GetUsersByName(name string) (Users, api.WebError) {

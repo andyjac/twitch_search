@@ -4,10 +4,10 @@ import (
 	"log"
 	"net/http"
 	"net/url"
-	"streaming_app/server/config"
-	"streaming_app/server/services/api"
 	"strings"
 	"time"
+	"twitch_search/server/config"
+	"twitch_search/server/services/api"
 )
 
 type QueryParams map[string]interface{}

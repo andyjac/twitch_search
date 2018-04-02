@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"net/http"
-	"streaming_app/server/services/twitch"
+	"twitch_search/server/services/twitch"
 
 	"github.com/gin-gonic/gin"
 )

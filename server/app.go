@@ -1,8 +1,8 @@
 package server
 
 import (
-	"streaming_app/server/config"
-	"streaming_app/server/router"
+	"twitch_search/server/config"
+	"twitch_search/server/router"
 )
 
 func Run() {
