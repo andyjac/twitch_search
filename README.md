@@ -13,7 +13,7 @@ Thanks!
 The following pieces of software are required to run this project:
 
 - [yarn](https://yarnpkg.com/en/docs/install) - `nodejs` dependency manager
-- [glide](https://yarnpkg.com/en/docs/install) - `golang` dependency manager
+- [glide](https://glide.sh/) - `golang` dependency manager
 - [create-react-native-app](https://github.com/react-community/create-react-native-app) - `react-native` boilerplace
 - [expo](https://expo.io/learn) - Run `react-native` apps on your personal device (__optional__)
 
