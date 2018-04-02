@@ -19,7 +19,17 @@ The following pieces of software are required to run this project:
 
 ### Install
 
-From the root of the project, run `make install` in order to install client and server packages.
+Clone the repo with the following command:
+
+```sh
+$ git clone git@github.com:andyjac/twitch_search.git $GOPATH/src/twitch_search
+```
+
+Then, from the root of the project, run:
+
+```sh
+$ make install
+```
 
 That's it!
 
@@ -27,10 +37,20 @@ That's it!
 
 ### Server
 
-To start the server, run `make server` from the root directory.
+To start the server, run the following command from the root directory:
+
+```
+$ make server
+```
 
 ### Client
 
-In a separate terminal, run `make client` to initiate the react-native app. Then follow the on-screen instructions for viewing the app on your device.
+In a separate terminal, run the following command:
+
+```sh
+$ make client
+```
+
+Then follow the onscreen instructions to run the app on and emulator or your personal device.
 
 > NOTE: If you want to run the client on your personal device with `expo` you *may* need to change the api url that the client points to from `127.0.0.1` to your machine's private ip. If this is the case, open the file `client/config.js` and edit the `api.host` property to point to your private ip. Then restart the client app by running `make client` from the root directory.
