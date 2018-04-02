@@ -14,8 +14,9 @@ The following pieces of software are required to run this project:
 
 - [yarn](https://yarnpkg.com/en/docs/install) - `nodejs` dependency manager
 - [glide](https://glide.sh/) - `golang` dependency manager (__optional__ - see below)
-- [create-react-native-app](https://github.com/react-community/create-react-native-app) - `react-native` boilerplace
 - [expo](https://expo.io/learn) - Run `react-native` apps on your personal device (__optional__)
+
+If you don't have any of them, you can either install them manually or let the `make install` (see below) command do it for you!
 
 ### Install
 
@@ -24,14 +25,6 @@ Clone the repo with the following command:
 ```sh
 $ git clone git@github.com:andyjac/twitch_search.git $GOPATH/src/twitch_search
 ```
-
-If you don't wish to install `glide` you can alternatively run the following commands to install the required `golang` packages:
-
-```sh
-$ go get -u github.com/gin-gonic/gin
-$ go get -u github.com/spf13/viper
-```
-
 Then, from the root of the project, run:
 
 ```sh

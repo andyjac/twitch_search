@@ -1,8 +1,9 @@
 BIN         = $(GOPATH)/bin
 APP_NAME    = $(shell pwd | sed 's:.*/::')
 APP_DIR     = $(GOPATH)/src/$(APP_NAME)
-SETUP_DIR   = $(APP_DIR)/setup
 GLIDE      := $(shell command -v glide 2> /dev/null)
+YARN       := $(shell command -v yarn 2> /dev/null)
+NODE       := $(shell command -v node 2> /dev/null)
 
 .PHONY: client
 .PHONY: server
@@ -20,10 +21,28 @@ build:
 	go install
 
 install:
-	cd client && yarn install
+ifdef	NODE
+	@echo 'found node installation'
+else
+	@echo 'installing node...'
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+	nvm install node
+endif
+
+ifdef YARN
+	@echo 'found yarn installation'
+	cd client && yarn
+else
+	@echo 'installing yarn...'
+	npm install -g yarn
+	cd client && yarn
+endif
 
 ifdef GLIDE
+	@echo 'found glide installation'
 	glide install
 else
-	$(warning "Skipping installation of Go dependencies: glide is not installed")
+	@echo 'installing glide...'
+	curl https://glide.sh/get | sh
+	glide install
 endif
