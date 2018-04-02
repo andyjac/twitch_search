@@ -52,6 +52,6 @@ In a separate terminal, run the following command:
 $ make client
 ```
 
-Then follow the onscreen instructions to run the app on and emulator or your personal device.
+Then follow the onscreen instructions to run the app on an emulator or your personal device.
 
 > NOTE: If you want to run the client on your personal device with `expo` you *may* need to change the api url that the client points to from `127.0.0.1` to your machine's private ip. If this is the case, open the file `client/config.js` and edit the `api.host` property to point to your private ip. Then restart the client app by running `make client` from the root directory.
