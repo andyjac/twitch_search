@@ -12,6 +12,7 @@ Thanks!
 
 The following pieces of software are required to run this project:
 
+- [node](https://nodejs.org/en/) - JavaScript server-side runtime environment
 - [yarn](https://yarnpkg.com/en/docs/install) - `nodejs` dependency manager
 - [glide](https://glide.sh/) - `golang` dependency manager
 - [expo](https://expo.io/learn) - Run `react-native` apps on your personal device (__optional__)
